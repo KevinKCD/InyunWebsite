@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Schoolbell&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.reviews {
+  background-color: #991717;
+  padding: 100px 40px 0px;
+  text-align: center;
+}
+
+/* ─── Title ──────────────────────────────────────────────────────────────── */
+.reviews__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(36px, 6vw, 72px);
+  color: #e8dfc0;
+  line-height: 1.1;
+  margin: 0 auto 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* starts hidden */
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reviews__title--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reviews__title-line {
+  display: block;
+}
+
+/* ─── Widget ─────────────────────────────────────────────────────────────── */
+.reviews__widget {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  /* starts hidden, slightly delayed so title animates first */
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s,
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s;
+}
+
+.reviews__widget--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .reviews {
+    padding: 72px 24px 0px;
+  }
+}
