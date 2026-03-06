@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a8bc468.css",
-    "main.js": "/static/js/main.391bc886.js",
-    "static/media/Sesame.png": "/static/media/Sesame.822f6723c8c4be2599cc.png",
-    "static/media/Matcha.png": "/static/media/Matcha.53937348735266119992.png",
-    "static/media/Hotteok.png": "/static/media/Hotteok.84ec05d5bfd3fc97c6fc.png",
-    "static/media/YeoniRed.png": "/static/media/YeoniRed.1218ca7629f55fe8cc21.png",
-    "static/media/String.png": "/static/media/String.d226117b301a21c268c5.png",
-    "index.html": "/index.html",
-    "main.0a8bc468.css.map": "/static/css/main.0a8bc468.css.map",
-    "main.391bc886.js.map": "/static/js/main.391bc886.js.map"
+    "main.css": "/InyunWebsite/static/css/main.0a8bc468.css",
+    "main.js": "/InyunWebsite/static/js/main.d3f979f3.js",
+    "static/media/Sesame.png": "/InyunWebsite/static/media/Sesame.822f6723c8c4be2599cc.png",
+    "static/media/Matcha.png": "/InyunWebsite/static/media/Matcha.53937348735266119992.png",
+    "static/media/Hotteok.png": "/InyunWebsite/static/media/Hotteok.84ec05d5bfd3fc97c6fc.png",
+    "static/media/YeoniRed.png": "/InyunWebsite/static/media/YeoniRed.1218ca7629f55fe8cc21.png",
+    "static/media/String.png": "/InyunWebsite/static/media/String.d226117b301a21c268c5.png",
+    "index.html": "/InyunWebsite/index.html",
+    "main.0a8bc468.css.map": "/InyunWebsite/static/css/main.0a8bc468.css.map",
+    "main.d3f979f3.js.map": "/InyunWebsite/static/js/main.d3f979f3.js.map"
   },
   "entrypoints": [
     "static/css/main.0a8bc468.css",
-    "static/js/main.391bc886.js"
+    "static/js/main.d3f979f3.js"
   ]
 }
