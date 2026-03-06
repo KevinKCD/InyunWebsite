@@ -1,4 +1,5 @@
 import React from "react";
+import { HashRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import inyunLogo from "./assets/Inyun.jpg";
@@ -10,14 +11,16 @@ import FindUs from "./components/findus/FindUs";
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <Navbar logoSrc={inyunLogo} brandName="Inyun" />
-      <Hero />
-      <Menu />
-      <Reviews />
-      <FindUs />
-      <Footer />
-    </div>
+    <HashRouter>
+      <div className="app">
+        <Navbar logoSrc={inyunLogo} brandName="Inyun" />
+        <Hero />
+        <Menu />
+        <Reviews />
+        <FindUs />
+        <Footer />
+      </div>
+    </HashRouter>
   );
 };
 
