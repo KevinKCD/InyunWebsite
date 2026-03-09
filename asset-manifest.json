@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/InyunWebsite/static/css/main.0a8bc468.css",
-    "main.js": "/InyunWebsite/static/js/main.d3f979f3.js",
+    "main.css": "/InyunWebsite/static/css/main.75887634.css",
+    "main.js": "/InyunWebsite/static/js/main.f23869e8.js",
+    "static/media/Mains.png": "/InyunWebsite/static/media/Mains.e2bafbcd47604133c5f6.png",
     "static/media/Sesame.png": "/InyunWebsite/static/media/Sesame.822f6723c8c4be2599cc.png",
     "static/media/Matcha.png": "/InyunWebsite/static/media/Matcha.53937348735266119992.png",
     "static/media/Hotteok.png": "/InyunWebsite/static/media/Hotteok.84ec05d5bfd3fc97c6fc.png",
+    "static/media/Zoe.jpg": "/InyunWebsite/static/media/Zoe.7dd5d939df1865a5117c.jpg",
+    "static/media/Slideshow4.jpg": "/InyunWebsite/static/media/Slideshow4.5a1aabfed592a0e22192.jpg",
+    "static/media/Slideshow2.jpg": "/InyunWebsite/static/media/Slideshow2.4fde789f30ee45237e3f.jpg",
     "static/media/YeoniRed.png": "/InyunWebsite/static/media/YeoniRed.1218ca7629f55fe8cc21.png",
+    "static/media/Jackie.jpg": "/InyunWebsite/static/media/Jackie.50d5720a3be18dce0de8.jpg",
+    "static/media/Slideshow3.jpg": "/InyunWebsite/static/media/Slideshow3.a4f06698dd80c0c8360f.jpg",
+    "static/media/Nelson.jpg": "/InyunWebsite/static/media/Nelson.a04d5332dbba4db68eea.jpg",
+    "static/media/Slideshow1.jpg": "/InyunWebsite/static/media/Slideshow1.8a1fe978d941d5af9e7b.jpg",
     "static/media/String.png": "/InyunWebsite/static/media/String.d226117b301a21c268c5.png",
     "index.html": "/InyunWebsite/index.html",
-    "main.0a8bc468.css.map": "/InyunWebsite/static/css/main.0a8bc468.css.map",
-    "main.d3f979f3.js.map": "/InyunWebsite/static/js/main.d3f979f3.js.map"
+    "main.75887634.css.map": "/InyunWebsite/static/css/main.75887634.css.map",
+    "main.f23869e8.js.map": "/InyunWebsite/static/js/main.f23869e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a8bc468.css",
-    "static/js/main.d3f979f3.js"
+    "static/css/main.75887634.css",
+    "static/js/main.f23869e8.js"
   ]
 }
