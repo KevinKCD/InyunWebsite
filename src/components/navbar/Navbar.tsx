@@ -15,7 +15,7 @@ interface NavbarProps {
 
 const LEFT_ITEMS: NavItem[] = [
   { label: "Menu", href: "#menu" },
-  { label: "Locations", href: "#locations" },
+  { label: "Gallery", href: "#Gallery" },
 ];
 
 const RIGHT_ITEMS: NavItem[] = [

@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Schoolbell&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.about-page {
+  background: #f5ede0;
+  min-height: 100vh;
+}
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.about-hero {
+  background: #991717;
+  text-align: center;
+  padding: 120px 24px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(52px, 10vw, 100px);
+  color: #f5ede0;
+  margin: 0 0 20px;
+  line-height: 1;
+  position: relative;
+}
+
+.about-hero__subtitle {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(15px, 2vw, 20px);
+  font-style: italic;
+  color: rgba(245, 237, 224, 0.75);
+  margin: 0;
+  position: relative;
+}
+
+/* ─── Story section ──────────────────────────────────────────────────────── */
+.about-story {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 40px 64px;
+}
+
+/* "Our Story" label above both columns */
+.about-story__heading-row {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(153, 23, 23, 0.15);
+}
+
+.about-story__label {
+  font-family: "Schoolbell", cursive;
+  font-size: 20px;
+  color: #991717;
+}
+
+/* Two-column layout */
+.about-story__columns {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ─── Slideshow (left column) ────────────────────────────────────────────── */
+.about-story__left {
+  position: sticky;
+  top: 100px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(153, 23, 23, 0.18);
+  aspect-ratio: 4 / 3;
+}
+
+.slideshow__track {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.32s ease;
+}
+
+.slideshow__track--fade {
+  opacity: 0;
+}
+
+.slideshow__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slideshow__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  color: #fff;
+  font-family: "Lora", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  padding: 28px 16px 12px;
+  text-align: center;
+}
+
+/* Arrows */
+.slideshow__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(245, 237, 224, 0.18);
+  border: 1px solid rgba(245, 237, 224, 0.35);
+  color: #f5ede0;
+  font-size: 26px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 2;
+}
+
+.slideshow__arrow:hover {
+  background: rgba(245, 237, 224, 0.32);
+}
+.slideshow__arrow--prev {
+  left: 10px;
+}
+.slideshow__arrow--next {
+  right: 10px;
+}
+
+/* Dots */
+.slideshow__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.slideshow__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(245, 237, 224, 0.4);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.slideshow__dot--active {
+  background: #f5ede0;
+  transform: scale(1.35);
+}
+
+/* ─── Story text (right column) ──────────────────────────────────────────── */
+.about-story__right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 4px;
+}
+
+.about-story__p {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.85;
+  color: #3a1a1a;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.about-story--visible .about-story__p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Story shaded variant ───────────────────────────────────────────────── */
+.about-story--shaded {
+  background: rgba(153, 23, 23, 0.04);
+}
+
+/* Right-side slideshow (flipped layout) */
+.about-story__right-slide {
+  position: sticky;
+  top: 100px;
+}
+
+/* ─── Divider ────────────────────────────────────────────────────────────── */
+.about-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 40px;
+  color: rgba(153, 23, 23, 0.3);
+  font-size: 14px;
+  letter-spacing: 0.3em;
+}
+
+/* ─── Values ─────────────────────────────────────────────────────────────── */
+.about-values {
+  background: #f5ede0;
+  padding: 72px 40px;
+  text-align: center;
+}
+
+.about-values__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 48px);
+  color: #991717;
+  margin: 0 0 56px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.about-values--visible .about-values__title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-values__card {
+  background: rgba(153, 23, 23, 0.08);
+  border: 1px solid rgba(153, 23, 23, 0.15);
+  border-radius: 16px;
+  padding: 32px 24px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.about-values--visible .about-values__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-values__icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.about-values__card-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #991717;
+  margin: 0 0 10px;
+}
+
+.about-values__card-body {
+  font-family: "Lora", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #991717;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Our Team section ───────────────────────────────────────────────────── */
+.about-team {
+  background: #991717;
+  padding: 80px 40px;
+}
+
+.about-team__header {
+  text-align: center;
+  margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.about-team__header--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-team__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(36px, 6vw, 64px);
+  color: #f5ede0;
+  margin: 0 0 12px;
+  line-height: 1;
+}
+
+.about-team__subtitle {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(14px, 1.8vw, 17px);
+  font-style: italic;
+  color: rgba(245, 237, 224, 0.65);
+  margin: 0;
+}
+
+.about-team__members {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ─── Member card ────────────────────────────────────────────────────────── */
+.member {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 52px;
+  align-items: start;
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.member--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.member__slide {
+  position: sticky;
+  top: 100px;
+}
+
+.member__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.member__name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(24px, 3vw, 34px);
+  color: #f5ede0;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.member__role {
+  font-family: "Schoolbell", cursive;
+  font-size: 15px;
+  color: rgba(245, 237, 224, 0.6);
+  letter-spacing: 0.04em;
+}
+
+.member__bio {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(14px, 1.6vw, 17px);
+  line-height: 1.85;
+  color: rgba(245, 237, 224, 0.85);
+  margin: 8px 0 0;
+}
+
+/* Separator between members */
+.about-team__members .member + .member {
+  padding-top: 80px;
+  border-top: 1px solid rgba(245, 237, 224, 0.12);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .about-story__columns {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story__left,
+  .about-story__right-slide {
+    position: static;
+    max-width: 480px;
+  }
+
+  .about-values__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member {
+    grid-template-columns: 1fr;
+  }
+
+  .member__slide {
+    position: static;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-story {
+    padding: 48px 20px;
+  }
+  .about-values {
+    padding: 60px 20px;
+  }
+  .about-team {
+    padding: 60px 20px;
+  }
+  .about-cta {
+    padding: 60px 20px;
+  }
+
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slideshow__arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+}

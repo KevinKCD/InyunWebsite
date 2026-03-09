@@ -38,6 +38,14 @@
   line-height: 1.5;
 }
 
+.flavor-strip__price {
+  font-family: "Lora", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(58, 26, 26, 0.6);
+  line-height: 1.5;
+}
+
 .flavor-strip__divider {
   width: 1px;
   background: rgba(153, 23, 23, 0.2);

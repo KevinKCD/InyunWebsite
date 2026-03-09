@@ -3,6 +3,9 @@ import { useSearchParams } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import MenuCategory from "./MenuCategory";
 import FlavourStrip from "./FlavourStrip";
+import Drink from "../../../assets/Matcha.png";
+import Limited from "../../../assets/Sesame.png";
+import Mains from "../../../assets/Mains.png";
 import "./MenuPage.css";
 
 interface MenuItemData {
@@ -30,6 +33,7 @@ const MENU_DATA: Category[] = [
   {
     id: "mains",
     label: "Mains",
+    image: Mains,
     items: [
       {
         id: 1,
@@ -72,44 +76,45 @@ const MENU_DATA: Category[] = [
     label: "Sides",
     items: [
       {
-        id: 7,
+        id: 6,
         name: "Tteokbokki",
         price: "£8.50",
         description: "Chewy ricecakes and fishcakes in a spicy and sweet sauce",
       },
       {
-        id: 8,
+        id: 7,
         name: "Rose Tteokbokki",
         price: "£9.50",
         description: "A creamy take on the regular with a less spicy base",
       },
-      { id: 9, name: "Chips", price: "£3.00" },
+      { id: 8, name: "Chips", price: "£3.00" },
       {
-        id: 10,
+        id: 9,
         name: "House Inyun Dip",
         price: "£3.50",
         description: "Punchy mayo dip with a spicy gochujang twist",
         isNew: true,
       },
-      { id: 11, name: "Nelson's Tiramisu", price: "£6.50", isNew: true },
+      { id: 10, name: "Nelson's Tiramisu", price: "£6.50", isNew: true },
     ],
   },
   {
     id: "drinks",
     label: "Drinks",
+    image: Drink,
     items: [
-      { id: 13, name: "Espresso", price: "£2.60" },
-      { id: 14, name: "Macchiato", price: "£2.90" },
-      { id: 15, name: "Americano", price: "£3.30" },
-      { id: 16, name: "Flat white", price: "£3.80" },
-      { id: 17, name: "Latte", price: "£3.80" },
-      { id: 18, name: "Cappuccino", price: "£3.80" },
-      { id: 18, name: "Mocha", price: "£4.00" },
+      { id: 11, name: "Espresso", price: "£2.60" },
+      { id: 12, name: "Macchiato", price: "£2.90" },
+      { id: 13, name: "Americano", price: "£3.30" },
+      { id: 14, name: "Flat white", price: "£3.80" },
+      { id: 15, name: "Latte", price: "£3.80" },
+      { id: 16, name: "Cappuccino", price: "£3.80" },
+      { id: 17, name: "Mocha", price: "£4.00" },
       { id: 18, name: "Hot Chocolate", price: "£4.2.0", isNew: true },
-      { id: 16, name: "English Breakfast Tea", price: "£2.80" },
-      { id: 17, name: "Green Tea Cold Brew", price: "£3.00" },
-      { id: 18, name: "Matcha Tea", price: "£4.00" },
-      { id: 18, name: "Matcha Latte", price: "£4.50" },
+      { id: 19, name: "English Breakfast Tea", price: "£2.80" },
+      { id: 20, name: "Green Tea Cold Brew", price: "£3.00" },
+      { id: 21, name: "Matcha Tea", price: "£4.00" },
+      { id: 22, name: "Matcha Latte", price: "£4.50" },
     ],
     flavourStrip: {
       heading: "Additions",
@@ -123,9 +128,10 @@ const MENU_DATA: Category[] = [
   {
     id: "limitedEdition",
     label: "Limited Edition",
+    image: Limited,
     items: [
-      { id: 13, name: "Vanilla Sea Salt Latte", price: "£5.2", isNew: true },
-      { id: 14, name: "Inyun Cold Foam Matcha", price: "£5.80", isNew: true },
+      { id: 22, name: "Vanilla Sea Salt Latte", price: "£5.2", isNew: true },
+      { id: 23, name: "Inyun Cold Foam Matcha", price: "£5.80", isNew: true },
     ],
   },
 ];
