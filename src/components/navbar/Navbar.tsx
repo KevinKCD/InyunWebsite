@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import yeoniRed from "../../assets/YeoniRed.png";
 
@@ -31,6 +32,7 @@ const NavLink: React.FC<NavItem> = ({ label, href }) => (
 const Navbar: React.FC<NavbarProps> = ({ logoSrc, brandName }) => {
   const [scrolled, setScrolled] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -46,9 +48,12 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc, brandName }) => {
         ))}
 
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            navigate("/");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
           className="nb-logo-wrap"
-          aria-label="Back to top"
+          aria-label="Go to homepage"
         >
           <img
             src={hovered ? yeoniRed : logoSrc}
