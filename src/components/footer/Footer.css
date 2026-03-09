@@ -3,6 +3,7 @@
   color: #ffffff;
   padding: 20px 0;
   width: 100%;
+  margin-top: auto; /* ← pushes footer to bottom */
 }
 
 .footer-inner {

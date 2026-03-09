@@ -1,0 +1,55 @@
+.menu-cat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.menu-cat:hover {
+  background: rgba(153, 23, 23, 0.06);
+}
+
+.menu-cat--active {
+  background: rgba(153, 23, 23, 0.1);
+}
+
+.menu-cat__thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #991717;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.menu-cat__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-cat__icon {
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.menu-cat__label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #991717;
+}
+
+.menu-cat--active .menu-cat__label {
+  font-weight: 900;
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.flavor-strip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  border-top: 1px solid rgba(153, 23, 23, 0.2);
+  border-bottom: 1px solid rgba(153, 23, 23, 0.2);
+  padding: 24px 0;
+  margin-top: 32px;
+}
+
+.flavor-strip__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.flavor-strip__name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #991717;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flavor-strip__desc {
+  font-family: "Lora", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(58, 26, 26, 0.6);
+  line-height: 1.5;
+}
+
+.flavor-strip__price {
+  font-family: "Lora", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(58, 26, 26, 0.6);
+  line-height: 1.5;
+}
+
+.flavor-strip__divider {
+  width: 1px;
+  background: rgba(153, 23, 23, 0.2);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .flavor-strip {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flavor-strip__divider {
+    width: 100%;
+    height: 1px;
+    align-self: auto;
+  }
+}
+
+.flavor-strip__wrap {
+  margin-top: 32px;
+}
+
+.flavor-strip__heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #991717;
+  margin: 0 0 16px;
+}

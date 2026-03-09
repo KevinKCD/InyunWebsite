@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Schoolbell&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.menu-page {
+  background: #f5ede0;
+  min-height: 100vh;
+}
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.menu-page__hero {
+  background: #991717;
+  text-align: center;
+  padding: 150px 24px 60px;
+}
+
+.menu-page__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(52px, 10vw, 100px);
+  color: #f5ede0;
+  margin: 0 0 16px;
+  line-height: 1;
+}
+
+.menu-page__subtitle {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(15px, 2vw, 18px);
+  font-style: italic;
+  color: rgba(245, 237, 224, 0.75);
+  margin: 0;
+}
+
+/* ─── Body: sidebar + content ────────────────────────────────────────────── */
+.menu-page__body {
+  display: grid;
+  grid-template-columns: 240px 1px 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  gap: 0;
+  align-items: start;
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────────────────── */
+.menu-page__sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 24px;
+}
+
+/* ─── Divider ────────────────────────────────────────────────────────────── */
+.menu-page__divider {
+  width: 1px;
+  background: rgba(153, 23, 23, 0.15);
+  align-self: stretch;
+}
+
+/* ─── Content ────────────────────────────────────────────────────────────── */
+.menu-page__content {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* ─── Section ────────────────────────────────────────────────────────────── */
+.menu-page__section {
+  scroll-margin-top: 120px;
+}
+
+.menu-page__content-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(153, 23, 23, 0.15);
+}
+
+.menu-page__category-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 40px);
+  color: #991717;
+  margin: 0;
+}
+
+.menu-page__count {
+  font-family: "Lora", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(153, 23, 23, 0.5);
+}
+
+/* ─── Grid ───────────────────────────────────────────────────────────────── */
+.menu-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .menu-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-page__body {
+    grid-template-columns: 1fr;
+    padding: 32px 20px;
+  }
+
+  .menu-page__sidebar {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+
+  .menu-page__divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .menu-page__content {
+    padding-left: 0;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menu-item__footer {
+  display: flex;
+  align-items: flex-start; /* ← was center, change to flex-start */
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f5ede0;
+  gap: 8px;
+}
+
+.menu-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item__description {
+  font-family: "Lora", Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(58, 26, 26, 0.55);
+  line-height: 1.4;
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Schoolbell&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.menu-item {
+  background: #f5ede0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(153, 23, 23, 0.2);
+}
+
+/* ─── Image area ─────────────────────────────────────────────────────────── */
+.menu-item__img-wrap {
+  position: relative;
+  background: #991717;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.menu-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item__img {
+  transform: scale(1.05);
+}
+
+/* ─── Placeholder ────────────────────────────────────────────────────────── */
+.menu-item__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #991717;
+}
+
+.menu-item__placeholder-icon {
+  font-size: 48px;
+  opacity: 0.4;
+}
+
+/* ─── Badge ──────────────────────────────────────────────────────────────── */
+.menu-item__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f5ede0;
+  color: #991717;
+  font-family: "Schoolbell", cursive;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 999px;
+  z-index: 2;
+  letter-spacing: 0.04em;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+.menu-item__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f5ede0;
+}
+
+.menu-item__name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #991717;
+}
+
+.menu-item__price {
+  font-family: "Schoolbell", cursive;
+  font-size: 16px;
+  font-weight: 900;
+  color: #991717;
+}
