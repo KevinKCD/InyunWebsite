@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Menu from "./components/features/menu/Menu";
 import MenuPage from "./components/features/menu/MenuPage";
 import AboutPage from "./components/features/aboutUs/AboutUsPage";
+import GalleryPage from "./components/features/gallery/GalleryPage";
 import Reviews from "./components/review/Reviews";
 import FindUs from "./components/findus/FindUs";
 import Footer from "./components/footer/Footer";
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
         <Footer />
       </div>

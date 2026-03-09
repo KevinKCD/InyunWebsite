@@ -169,42 +169,44 @@ const Slideshow: React.FC<{ images: { src: string; caption?: string }[] }> = ({
   }, [current, next]);
 
   return (
-    <div className="slideshow">
-      <div
-        className={`slideshow__track ${fading ? "slideshow__track--fade" : ""}`}
-      >
-        <img
-          src={images[current].src}
-          alt={images[current].caption ?? `Slide ${current + 1}`}
-          className="slideshow__img"
-        />
-        {images[current].caption && (
-          <div className="slideshow__caption">{images[current].caption}</div>
-        )}
-      </div>
-      <button
-        className="slideshow__arrow slideshow__arrow--prev"
-        onClick={prev}
-        aria-label="Previous"
-      >
-        ‹
-      </button>
-      <button
-        className="slideshow__arrow slideshow__arrow--next"
-        onClick={next}
-        aria-label="Next"
-      >
-        ›
-      </button>
-      <div className="slideshow__dots">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            className={`slideshow__dot ${i === current ? "slideshow__dot--active" : ""}`}
-            onClick={() => goTo(i)}
-            aria-label={`Slide ${i + 1}`}
+    <div className="aboutUs-page">
+      <div className="slideshow">
+        <div
+          className={`slideshow__track ${fading ? "slideshow__track--fade" : ""}`}
+        >
+          <img
+            src={images[current].src}
+            alt={images[current].caption ?? `Slide ${current + 1}`}
+            className="slideshow__img"
           />
-        ))}
+          {images[current].caption && (
+            <div className="slideshow__caption">{images[current].caption}</div>
+          )}
+        </div>
+        <button
+          className="slideshow__arrow slideshow__arrow--prev"
+          onClick={prev}
+          aria-label="Previous"
+        >
+          ‹
+        </button>
+        <button
+          className="slideshow__arrow slideshow__arrow--next"
+          onClick={next}
+          aria-label="Next"
+        >
+          ›
+        </button>
+        <div className="slideshow__dots">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              className={`slideshow__dot ${i === current ? "slideshow__dot--active" : ""}`}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
