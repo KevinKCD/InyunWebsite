@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/InyunWebsite/static/css/main.75887634.css",
-    "main.js": "/InyunWebsite/static/js/main.f23869e8.js",
+    "main.css": "/InyunWebsite/static/css/main.e6e7a2da.css",
+    "main.js": "/InyunWebsite/static/js/main.62657c1e.js",
     "static/media/Mains.png": "/InyunWebsite/static/media/Mains.e2bafbcd47604133c5f6.png",
     "static/media/Sesame.png": "/InyunWebsite/static/media/Sesame.822f6723c8c4be2599cc.png",
     "static/media/Matcha.png": "/InyunWebsite/static/media/Matcha.53937348735266119992.png",
@@ -16,11 +16,11 @@
     "static/media/Slideshow1.jpg": "/InyunWebsite/static/media/Slideshow1.8a1fe978d941d5af9e7b.jpg",
     "static/media/String.png": "/InyunWebsite/static/media/String.d226117b301a21c268c5.png",
     "index.html": "/InyunWebsite/index.html",
-    "main.75887634.css.map": "/InyunWebsite/static/css/main.75887634.css.map",
-    "main.f23869e8.js.map": "/InyunWebsite/static/js/main.f23869e8.js.map"
+    "main.e6e7a2da.css.map": "/InyunWebsite/static/css/main.e6e7a2da.css.map",
+    "main.62657c1e.js.map": "/InyunWebsite/static/js/main.62657c1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.75887634.css",
-    "static/js/main.f23869e8.js"
+    "static/css/main.e6e7a2da.css",
+    "static/js/main.62657c1e.js"
   ]
 }
