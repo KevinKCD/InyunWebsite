@@ -5,7 +5,7 @@ import Matcha from "../../../assets/Matcha.png";
 import Sesame from "../../../assets/Sesame.png";
 
 /* ── Edit menu items here ────────────────────────────────────────────────── */
-const SECTION_TITLE = "Find and Get\nWhat You Love";
+const SECTION_TITLE = "Find and Get\nWhat You Love!";
 
 const MENU_ITEMS = [
   { src: Hotteok, alt: "Mains", label: "Mains" },
