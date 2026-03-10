@@ -57,10 +57,10 @@ const TEAM_MEMBERS = [
         src: Nelson,
         caption: "The man, the myth, the legend.",
       },
-      {
-        src: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=900",
-        caption: "Prepping the brine",
-      },
+      // {
+      //   src: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=900",
+      //   caption: "Prepping the brine",
+      // },
     ],
   },
   {
